@@ -1,61 +1,124 @@
-*{
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
-.navbar{
+
+body {
+    background: #bababa;
+
+}
+
+.navbar {
     display: flex;
     flex-direction: row;
     width: 100vw;
     height: 80px;
     align-items: center;
     justify-content: end;
+    background-color: #bd6f39;
+    margin-bottom: 20px;
 }
-.navbar-list{
+
+.navbar-list {
     display: flex;
     flex-direction: row;
     margin: auto 20px;
     list-style-type: none;
     gap: 0 20px;
+
 }
-.navbar-list-item >a {
+
+.navbar-list-item>a {
     font-size: 20px;
     text-decoration: none;
-    color: black;
+    color: white;
+    font-weight: bold;
 }
-.form{
+
+main {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.card {
+    width: 280px;
+    border-radius: 20px;
+    gap: 10px;
+    overflow: hidden;
+    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.6);
+    background: white;
+
+
+}
+
+.card>.card-image {
+    width: 100%;
+    border-radius: 10px;
+    height: 180px;
+
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+}
+
+.card>.card-text {
     display: flex;
     flex-direction: column;
-    width: 460px;
-    margin: 0 auto;
-    padding: 50px 40px;
-    gap: 5px 0;
-    border: 1px solid black;
+    align-items: center;
 }
-.form > label{
+
+.card-info {
+    display: flex;
+    flex-direction: row;
+    background-color: #f56c14;
+    height: 60px;
+    font-weight: bold;
+}
+
+.card-info div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 33.33%;
+    color: white;
     font-size: 16px;
-    margin-top: 5px;
+    text-align: center;
 }
-.form > .form-input{
-    height: 30px;
-    width: 100%;
-    outline: none;
-    border: 1px solid black;
-    padding-left: 10px;
-    font-size: 16px;
-    border-radius: 5px;
-    margin-bottom: 16px;
+
+.card-text {
+    padding: 10px 15px;
 }
-#edad{
-    width: 150px;
-    padding: 0 5px 0 10px;
+
+.card-text small {
+    color: #f56c14;
 }
-.form > .form-send{
-    height: 40px;
-    border-radius: 10px;
-    outline: none;
-    border: none;
-    width: 400px;
-    margin: 20px auto 0 auto;
-    cursor: pointer;
-    font-size: 18px;
+
+.card-text>p {
+    text-align: justify;
+}
+
+.center {
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.section>h1 {
+    font-size: 50px;
+}
+
+.section>p {
+    font-size: 30px;
 }
